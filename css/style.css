@@ -6,15 +6,15 @@
 }
 
 :root {
-  --cream: #34ee0f;
+  --cream: #f6f8f6;
   --paper: #f30f07;
   --ink: #0c0c0c;
-  --muted: #f0e009;
-  --coral: #f00b91;
+  --muted: #070706;
+  --coral: #0a0a0a;
   --coral-dark: #09f1cb;
   --butter: #fc0202;
   --sage: #789474;
-  --sage-dark: #e70cf7;
+  --sage-dark: #523009;
   --line: #18b4cf;
 }
 
@@ -73,7 +73,7 @@ img {
 }
 
 .logo-brambi img {
-    height: 50px;
+    height: 160px;
     width: auto;
     max-width: 200px;
     object-fit: contain;
