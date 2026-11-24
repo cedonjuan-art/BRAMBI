@@ -1,195 +1,396 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-  <meta name="description" content="Tienda de panatlones de la mas alta calidad, aptos para toda ocasión">
-  <meta name="keywords" content="Pantalones Formales, Pantalones de uso rudo, Pantalones para hacer deporte, Pantalones para temperaturas extremas, Pantalones neutros">
-  <meta name="author" content="John Doe">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Zeyada&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Tienda de pantalones de alta calidad, aptos para toda ocasión.">
+    <meta name="keywords" content="Pantalones formales, pantalones de uso rudo, pantalones deportivos, pantalones para temperaturas extremas">
+    <meta name="author" content="Carlos Don Juan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Zeyada&display=swap" rel="stylesheet">
 
-  
-<title>BRAMBI | Carlos Don Juan</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>BRAMBI | Carlos Don Juan</title>
 </head>
-<!--Aqui inicia el desarrollo del cuerpo de la Pagina-->
 
 <body>
-<!--ENCABEZADO DE LA PAGINA-->
-<header class="header-brambi">
 
-    <div class="container header-inner">
-      <a href="#inicio" class="logo-brambi">
-         <img src="img/logo.png" alt="logo de brambi" >
-      </a>
+    <!-- ENCABEZADO -->
+    <header class="header-brambi">
+        <div class="container header-inner">
 
+            <a href="#inicio" class="logo-brambi">
+                <img src="img/logo.png" alt="Logo de BRAMBI">
+            </a>
 
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#oferta">Oferta</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero mas información sobre sus pantalones, estoy interesado.')">
-          <i data-lucide="message-circle"></i> Enviar mensaje
-        </button>
-      </nav>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#oferta">Oferta</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
 
+                <button type="button" class="btn primary"
+                    onclick="openWhatsApp('Hola, quiero más información sobre sus pantalones, estoy interesado.')">
+                    <i data-lucide="send"></i>
+                    Enviar mensaje
+                </button>
+            </nav>
 
-      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
-    </div>
+            <button id="menu-toggle" class="menu-toggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                ☰
+            </button>
 
+        </div>
     </header>
 
-<!--INICIO DEL CONTENIDO PRINCIPAL DE LA PAGINA-->
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
 
-<main>
+        <!-- INICIO / HERO -->
+        <section id="inicio" class="container hero-section">
 
-   <!-- HERO-->
-    <section id="inicio" class="container hero-section">
-      <div class="hero-content fade-in-up">
-        <p class="eyebrow">Moda · Comodidad· Seguridad</p>
-        <h1 class="hero-title">BRAMBI</h1>
-        <p class="hero-subtitle"> 
-        Tu comodidad dia a dia</p>
-        <a href="#menu" class="btn btn-coffee hero-cta">
-          Descubre nuestros productos <i data-lucide="arrow-right" class="icon-sm"></i>
-        </a>
-      </div>
+            <div class="hero-content fade-in-up">
+                <p class="eyebrow">Moda · Comodidad · Seguridad</p>
 
+                <h1 class="hero-title">BRAMBI</h1>
 
+                <p class="hero-subtitle">
+                    Tu comodidad día a día
+                </p>
 
-      <div class="hero-media">
-        <div class="hero-backdrop" aria-hidden="true"></div>
-        <img
-          src="img/hero.jpg.png"
-          alt="Imagen para fondo de BRAMBI"
-          width="1600"
-          height="1104"
-          class="hero-image"
-        />
-      </div>
-    </section>
-<!--AQUI VA LO DE NOSOTROS-->
-<section id="nosotros" class="about-section">
-      <div class="container about-grid">
-        <img
-          src="img/FOTO 1.jpg"
-          alt="Estilo en tu dia a dia"
-          loading="lazy"
-          width="1008"
-          height="1200"
-          class="about-image"
-        />
-        <div>
-          <p class="eyebrow text-sand">Nosotros</p>
-          <h2 class="section-title">Siempre copn estilo en todos lados</h2>
-          <p class="about-text">
-            BRAMBI comenzo en un pueblo mexicano donde la mano de obra era lo que sobrara y talento de por medio
-          </p>
-          <p class="about-text">
-            Hoy trabajamos de la mano con proovedores locales, pagando precios justos y cuidando cada etapa: desde la creación hasta el  producto finalizado.
-             Creemos que un buen pantalón cuenta la historia de quien lleva y quiere un buen estilo.
-         </p>
+                <a href="#productos" class="btn btn-coffee hero-cta">
+                    Descubre nuestros productos
+                    <i data-lucide="arrow-right" class="icon-sm"></i>
+                </a>
+            </div>
+
+            <div class="hero-media">
+                <div class="hero-backdrop" aria-hidden="true"></div>
+
+                <img
+                    src="img/hero.jpg.png"
+                    alt="Imagen de presentación de BRAMBI"
+                    width="1600"
+                    height="1104"
+                    class="hero-image"
+                >
+            </div>
+
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="about-section">
+
+            <div class="container about-grid">
+
+                <img
+                    src="img/FOTO 1.jpg"
+                    alt="Estilo en tu día a día"
+                    loading="lazy"
+                    width="1008"
+                    height="1200"
+                    class="about-image"
+                >
+
+                <div>
+                    <p class="eyebrow text-sand">Nosotros</p>
+
+                    <h2 class="section-title">
+                        Siempre con estilo en todos lados
+                    </h2>
+
+                    <p class="about-text">
+                        BRAMBI comenzó en un pueblo mexicano donde
+                        la mano de obra y el talento dieron origen
+                        a nuestra pasión por la moda.
+                    </p>
+
+                    <p class="about-text">
+                        Hoy trabajamos de la mano con proveedores
+                        locales, pagando precios justos y cuidando
+                        cada etapa: desde la creación hasta el
+                        producto finalizado.
+                        Creemos que un buen pantalón cuenta la
+                        historia de quien lo lleva y busca un buen estilo.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section id="productos" class="container menu-section">
+
+            <div class="section-header-center">
+                <p class="eyebrow">Mis productos</p>
+
+                <h2 class="section-title">Hechos a mano</h2>
+
+                <p class="muted-note">
+                    Descubre la variedad de modelos que hemos creado para ti.
+                </p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- PRODUCTO 1 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrap">
+                        <img src="img/FOTO 3.jpg" alt="Modelos de pantalones" loading="lazy" width="816" height="816">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="product-header">
+                            <h3>Pantalones</h3>
+                            <span class="product-price">$998</span>
+                        </div>
+
+                        <p class="product-desc">
+                            Descubre cómo vestir con estilo siempre.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrap">
+                        <img src="img/FOTO 10.jpg" alt="Pantalón formal" loading="lazy" width="816" height="816">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="product-header">
+                            <h3>Pantalón formal</h3>
+                            <span class="product-price">$1,498</span>
+                        </div>
+
+                        <p class="product-desc">
+                            Diseñados con materiales de alta calidad para un estilo único.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 3 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrap">
+                        <img src="img/FOTO 2.jpg" alt="Pantalón de dama" loading="lazy" width="816" height="816">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="product-header">
+                            <h3>Pantalón de dama</h3>
+                            <span class="product-price">$1,098</span>
+                        </div>
+
+                        <p class="product-desc">
+                            Diseñados con materiales de alta calidad para un estilo único.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 4 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrap">
+                        <img src="img/FOTO 9.jpg" alt="Pantalones baggy" loading="lazy" width="816" height="816">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="product-header">
+                            <h3>Pantalones baggy</h3>
+                            <span class="product-price">$1,198</span>
+                        </div>
+
+                        <p class="product-desc">
+                            La comodidad a tu alcance con un solo pantalón.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 5 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrap">
+                        <img src="img/FOTO 4.jpg" alt="Pantalones skinny jeans de dama" loading="lazy" width="816" height="816">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="product-header">
+                            <h3>Pantalones skinny jeans dama</h3>
+                            <span class="product-price">$1,098</span>
+                        </div>
+
+                        <p class="product-desc">
+                            Pantalones para acompañarte en tu día a día.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 6 -->
+                <article id="oferta" class="product-card">
+
+                    <div class="product-image-wrap">
+                        <img src="img/FOTO 6.jpg" alt="Pantalones en oferta" loading="lazy" width="816" height="816">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="product-header">
+                            <h3>Últimas tallas - 20% descuento</h3>
+                            <span class="product-price">$898</span>
+                        </div>
+
+                        <p class="product-desc">
+                            Aprovecha nuestras últimas tallas a un precio especial.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DIFERENCIADORES -->
+    <section class="perks-section">
+
+        <div class="container perks-grid">
+
+            <!-- DIFERENCIADOR 1 -->
+            <div class="perk-item">
+
+                <span class="perk-icon">
+                    <i data-lucide="shopping-cart"></i>
+                </span>
+
+                <h3>LA MODA A TU ALCANCE</h3>
+
+                <p>
+                    De acuerdo con tus necesidades, te ofrecemos
+                    pantalones de gran calidad y estilo.
+                </p>
+
+            </div>
+
+            <!-- DIFERENCIADOR 2 -->
+            <div class="perk-item">
+
+                <span class="perk-icon">
+                    <i data-lucide="plane"></i>
+                </span>
+
+                <h3>ENVÍOS RÁPIDOS Y EFICIENTES</h3>
+
+                <p>
+                    Envíos nacionales e internacionales con
+                    entrega rápida y segura.
+                </p>
+
+            </div>
+
+            <!-- DIFERENCIADOR 3 -->
+            <div class="perk-item">
+
+                <span class="perk-icon">
+                    <i data-lucide="shield-check"></i>
+                </span>
+
+                <h3>PROTECCIÓN DE PAGO</h3>
+
+                <p>
+                    Tus pagos están protegidos con tecnología
+                    de seguridad.
+                </p>
+
+            </div>
+
+            <!-- DIFERENCIADOR 4 -->
+            <div class="perk-item">
+
+                <span class="perk-icon">
+                    <i data-lucide="users"></i>
+                </span>
+
+                <h3>ATENCIÓN AL CLIENTE</h3>
+
+                <p>
+                    Nuestro equipo está disponible para ayudarte
+                    con cualquier duda o consulta.
+                </p>
+
+            </div>
+
         </div>
-      </div>
     </section>
 
-<!--AQUI VAN LOS PRODUCTOS-->
- <section id="menu" class="container menu-section">
-      <div class="section-header-center">
-        <p class="eyebrow">Mis poroductos</p>
-        <h2 class="section-title">Hechos a mano</h2>
-        <p class="muted-note">Descubre la variedad de modelos que hemos creado para ti.</p>
-      </div>
-     <!--Acontinuación mis productos-->
-        <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <img src="img/FOTO 3.jpg" alt="MODELOS" loading="lazy" width="816" height="816" />
-          </div>
+    <!-- FOOTER -->
+    <footer id="contacto" class="site-footer">
 
-          <div class="product-body">
-            <div class="product-header">
-              <h3>Pantalones</h3>
-              <span class="product-price">$998</span>
+        <div class="container footer-inner">
+
+            <a href="#inicio" class="logo logo-light" aria-label="BRAMBI, inicio">
+                <span class="logo-text">BRAMBI</span>
+            </a>
+
+            <nav class="footer-nav" aria-label="Navegación pie de página">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#oferta">Oferta</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">
+                    <i data-lucide="instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
             </div>
-            <p class="product-desc">Descubre como vestir con estilo siempre.</p>
-          </div>
-        </article>
 
-    <!--PRODUCTO 2-->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <img src="img/FOTO 10.jpg" alt="MODELOS" loading="lazy" width="816" height="816" />
-          </div>
-          <div class="product-body">
-            <div class="product-header">
-              <h3>PANTALON FORMAL</h3>
-              <span class="product-price">$1,498</span>
-            </div>
-            <p class="product-desc">Diseñadas con materiales de alta calidad para un estilo único.</p>
-          </div>
-        </article>
- 
-     
+        </div>
 
-    <!--PRODUCTOS 3-->
-     <article class="product-card">
-          <div class="product-image-wrap">
-            <img src="img/FOTO 2.jpg" alt="MODELOS" loading="lazy" width="816" height="816" />
-          </div>
+        <p class="copyright">
+            © <span id="current-year"></span> BRAMBI. Todos los derechos reservados.
+        </p>
 
-          <div class="product-body">
-            <div class="product-header">
-              <h3>PANTALON DE DAMA</h3>
-              <span class="product-price">$1,098</span>
-            </div>
-            <p class="product-desc">Diseñadas con materiales de alta calidad para un estilo único.</p>
-          </div>
-        </article>
+    </footer>
 
-    </div>
-</section>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
 
-</main> <!--FIN DE CONTENIDO PAGINA PRINCIPAL-->
+    <!-- INICIALIZAR ICONOS LUCIDE -->
+    <script>
+        lucide.createIcons();
 
-<!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a href="#inicio" class="logo logo-light" aria-label="BRAMBI, inicio">
-       
-        <span class="logo-text">BRAMBI</span>
-      </a>
-
-
-      <nav class="footer-nav" aria-label="Navegación pie de página">
-        <a href="#inicio">Inicio</a>
-        <a href="#productos">Productos</a>
-        <a href="#about">About</a>
-        <a href="#oferta">Oferta</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-
-
-      <div class="social-links">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-      </div>
-    </div>
-
-
-    <p class="copyright">
-      © <span id="current-year"></span> BRAMBI. Todos los derechos reservados.
-    </p>
-  </footer>
-
+        // Año automático del copyright
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 </html>
