@@ -12,6 +12,7 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -345,6 +346,71 @@
         </div>
     </section>
 
+    <!--Dirección y contacto-->
+    <section id="contacto" class="container contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">Escribenos</h2>
+        <p class="muted-note">Pregunta tus dudas y nosotros te las resolvemos.</p>
+
+
+        <ul class="contact-list">
+          <li><a href="https://maps.app.goo.gl/gCEyF3YHTzoQkNFa7" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="map-pin" class="contact-icon" >
+
+          </i> Calle Invernaderom 25, Col. Viveros del Valle</li> </a>
+          <li><i data-lucide="phone" class="contact-icon"></i> (473) 928 9847</li>
+          <li><i data-lucide="mail" class="contact-icon"></i> cdonjuan325@gmail.com</li>
+          <li><i data-lucide="clock" class="contact-icon"></i> 10:00 AM - 8:00 PM</li>
+        </ul>
+
+
+        <a
+          href="https://wa.me/555-21-78-36-99"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary whatsapp-btn"
+        >
+          <i data-lucide="message-circle" class="icon-sm"></i> WhatsApp
+        </a>
+        <p class="footnote">+52 55-21-78-36-99</p>
+      </div>
+
+     <!--Formulario de contacto-->
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" maxlength="100" />
+          <p id="error-name" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" maxlength="255" />
+          <p id="error-email" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <p id="error-message" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <button type="submit" class="btn-formulario">Enviar mensaje</button>
+
+
+        <p id="form-status" class="form-status" role="status" hidden>
+          ¡Formulario completado! 
+        </p>
+      </form>
+    </section>
+
+</main> <!--FIN DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
+
+
     <!-- FOOTER -->
     <footer id="contacto" class="site-footer">
 
@@ -363,13 +429,12 @@
             </nav>
 
             <div class="social-links">
-                <a href="#" aria-label="Instagram">
-                    <i data-lucide="instagram"></i>
+                <a href="https://www.instagram.com/x.carlos.mx?evlk=bmVmZTh2N3F1dXRv&utm_source=qr" target="_blank" rel="noopener noreferrer"aria-label="Instagram"><i class="fa-brands fa-instagram"></i>
+                <a href="https://www.tiktok.com/@x.carlos.mx?_r=1&_t=ZS-9BjEqaGbPst" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i>
+                <a href="https://www.facebook.com/share/1CdJdhSgzk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i>
                 </a>
 
-                <a href="#" aria-label="Facebook">
-                    <i data-lucide="facebook"></i>
-                </a>
+                
             </div>
 
         </div>
